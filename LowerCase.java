@@ -1,5 +1,5 @@
 
-public class LowerCase 
+class LowerCase 
 {
     public static void main(String[] args) 
     {  
