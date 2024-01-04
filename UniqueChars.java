@@ -9,8 +9,7 @@ public class UniqueChars
     public static String uniqueChars(String s) 
     {
         String result = "";
-        int leng = s.length();
-        for (int i = 0; i < leng; i++)
+        for (int i = 0; i < s.length(); i++)
         {
             char char1 = s.charAt(i);
             boolean isUnique = true;
