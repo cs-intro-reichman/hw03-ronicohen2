@@ -12,9 +12,9 @@ class LowerCase
        for (int i=0; i<s.length(); i++)
        {
         char c = s.charAt(i);
-        if (Character.isUpperCase(c))
+        if ((c >= 'A') && (c <= 'Z'))
         {
-            result += Character.toLowerCase(c);
+            result += (char)(c + 32);
         }
         else
         {
