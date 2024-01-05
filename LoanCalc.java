@@ -66,7 +66,7 @@ public class LoanCalc
 		double current = loan; 
 		for (int i = 1; i <= n; i++)
 		{
-			balance = (current - payment)*(1 + (rate/100));
+			balance = (current-payment)*(1 + (rate/100));
 			current = balance;
 		}
     	return balance;
