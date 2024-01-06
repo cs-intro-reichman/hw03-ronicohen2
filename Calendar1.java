@@ -75,21 +75,28 @@ public class Calendar1
 				dayOfWeek ++;
 			} 
 			dayOfMonth ++;
-		}		
+		}	
+		dayOfMonth = 1;	
 	 } 
 		 
 
 	private static boolean isLeapYear(int year) 
 	{
-	    if (year % 4 == 0)
+		if (year % 4 == 0) 
 		{
-			return true;
-		}	
-		if ((year % 100 ==0) && (year % 400 == 0))
+			if (year % 100 == 0) 
+			{
+				return year % 400 == 0;
+			} 
+			else 
+			{
+				return true;
+			}
+		}
+		else 
 		{
-			return true;
-		}	
-		else return false;
+			return false;
+		}
 	}
 	 
 	private static int nDaysInMonth(int month, int year) 
