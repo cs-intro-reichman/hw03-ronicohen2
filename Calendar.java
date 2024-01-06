@@ -6,13 +6,10 @@ public class Calendar
 	static int year = 1900;
 	static int dayOfWeek = 2;     // 1.1.1900 was a Monday
 	static int nDaysInMonth = 31; // Number of days in January
-	//static int specialSunday = 0;
 	
 
 	public static void main(String args[]) 
 	{
-		//int debugDaysCounter = 0; 
-
         int currentYear = Integer.parseInt(args[0]);
 
 		while(year< currentYear)
@@ -43,24 +40,15 @@ public class Calendar
 		{
 			advance(dayOfMonth, month, currentYear);
 			month++;
-			//debugDaysCounter++;
 		}
 		if (month == 13)
 		{
 			month = 1;
 		}	
 	 	year++;				
-	 	//if (debugDaysCounter > 365) 
-		//{ 
-	 	//	break;
-	 	//}
-
-		//System.out.println("During the 20th century, " +specialSunday+ " Sundays fell on the first day of the month");
+	 	
 	 }
 	
-	 // Advances the date (day, month, year) and the day-of-the-week.
-	 // If the month changes, sets the number of days in this month.
-	 // Side effects: changes the static variables dayOfMonth, month, year, dayOfWeek, nDaysInMonth.
 	 
 	 private static void advance(int dayOfMonth, int month, int year) 
 	 {
