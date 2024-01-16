@@ -11,7 +11,7 @@ class LowerCase
        String result = "";
        for (int i=0; i<s.length(); i++)
        {
-        char c = s.charAt(i);
+        char c = s.charAt(i); // TODO: better to make tab for proper/more readable identation.
         if ((c >= 'A') && (c <= 'Z'))
         {
             result += (char)(c + 32);
